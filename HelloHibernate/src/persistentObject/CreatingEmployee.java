@@ -16,7 +16,6 @@ public class CreatingEmployee {
 		Session session = sessionFactory.openSession();
 		
 		Transaction transaction = session.beginTransaction();
-		
 		Employee employee = new Employee();
 		employee.setId(1);
 		employee.setFirstName("Tran");
