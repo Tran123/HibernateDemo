@@ -24,9 +24,9 @@
 		</property>
 
 		<!-- List of XML mapping files -->
-		<!--<mapping resource="employee.hbm.xml" />-->
-		<!--<mapping class="persistentObject.Employer"/>-->
-		<mapping resource="user.hbm.xml"/>
+		<mapping resource="employee.hbm.xml" />
+		<!-- <mapping class="persistentObject.Employer"/> -->
+		<!--  <mapping resource="user.hbm.xml"/>-->
 
 	</session-factory>
 </hibernate-configuration>
