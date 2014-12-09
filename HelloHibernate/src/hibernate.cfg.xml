@@ -14,17 +14,18 @@
 
 		<!-- Assume test is the database name -->
 		<property name="hibernate.connection.url">
-			jdbc:mysql://localhost:3306/test
+			jdbc:mysql://192.168.5.123:3306/test
 		</property>
 		<property name="hibernate.connection.username">
-			root
+			mysql
 		</property>
 		<property name="hibernate.connection.password">
-			123456
+			pass
 		</property>
 
 		<!-- List of XML mapping files -->
-		<mapping resource="employee.hbm.xml" />
+		<!-- <mapping resource="employee.hbm.xml" /> -->
+		<mapping resource="animal.hbm.xml" />
 		<!-- <mapping class="persistentObject.Employer"/> -->
 		<!--  <mapping resource="user.hbm.xml"/>-->
 

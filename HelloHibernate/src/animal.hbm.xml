@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="animalObject.Animal" table="animal"
+		discriminator-value="animal">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+
+		<discriminator column="type" type="string"></discriminator>
+		<property name="name"></property>
+
+		<subclass name="animalObject.Dog" discriminator-value="dog">
+		</subclass>
+
+		<subclass name="animalObject.Bird" discriminator-value="bird">
+		</subclass>
+
+	</class>
+
+</hibernate-mapping> 
